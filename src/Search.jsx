@@ -7,13 +7,14 @@ export class Search extends Component {
       matchingIssues: []
     }
   }
-  
+
   render() {
     return (
-      <div className='search'>
+      <form className='search'>
         <h1>React Demo</h1>
         <h3>Start typing to search issues!</h3>
-      </div>
+        <input type="search"/>
+      </form>
     )
   }
 }
