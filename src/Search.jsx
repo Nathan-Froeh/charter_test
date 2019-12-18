@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 
 export class Search extends Component {
   render() {
@@ -6,7 +6,6 @@ export class Search extends Component {
       <div className='search'>
         <h1>React Demo</h1>
         <h3>Start typing to search issues!</h3>
-        <input type="search" name="search" id="search"/>
       </div>
     )
   }
