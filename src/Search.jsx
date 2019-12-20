@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import SearchResult from './SearchResult';
 
 export class Search extends Component {
   constructor() {
@@ -24,6 +25,7 @@ export class Search extends Component {
         <h1>React Demo</h1>
         <h3>Start typing to search issues!</h3>
         <input type="search" onChange={this.filterList}/>
+        {this.state.matchingIssues && <SearchResult issues={this.state.matchingIssues}/>}
       </form>
     )
   }
